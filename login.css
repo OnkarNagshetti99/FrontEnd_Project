@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Ewert&family=Lobster&family=Monsieur+La+Doulaise&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+position: fixed;
+top: 0%;
+width: 100%;
+height: 50px;
+display: flex;
+justify-content:space-between ;
+align-self: center;
+z-index: 1;
+}
+.close-tab
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 34px;
+    background: #162938;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 16px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+   
+}
+.logo
+{
+  font-size: 32px;
+  color: #f3f3f2; 
+  user-select: none;
+  margin-left: 60px;
+  margin-top: 18px;
+  font-weight: bolder;
+  
+}
+.Navigation a
+{
+position: relative;
+font-size: 26px;
+color: #f4efef; 
+text-decoration: none;
+box-sizing: border-box;
+font-weight: 500;
+margin-left: 50px;
+padding-top: 10px;
+}
+.Navigation a::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #eadede;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s; 
+}
+.Navigation a:hover:after
+{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.btn
+{
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  border: 2px solid #fff;
+  outline: none;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #fff;
+  border-radius:6px ;
+  background-color:#162938 ;
+  letter-spacing: 4px;
+}
+
+.btn:hover
+{
+  background: #f3f3f2;
+    color: #060606;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f2f4f4,
+                0 0 25px #eaeded,
+                0 0 50px #f4f7f8,
+                0 0 100px #f2f4f4;
+}
+
+.Navigation .home
+{
+    margin-left: 100px;
+}
+.container
+{
+    position: absolute;
+    top:20%;
+    right:35%;
+}
+body
+{
+    background: url(https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149155031.jpg?w=900&t=st=1677941414~exp=1677942014~hmac=2bf90351b577f36e9a2eb8a547cc48108c6204c841d7573b03cb0925d9234a8d) no-repeat center center fixed;
+    background-size: cover;
+
+}
+.container
+{
+    position: relative;
+    margin-left: 1100px;
+    width: 363px;
+    height: 441px;
+    padding: 40px;
+    position: fixed; 
+    box-sizing: border-box fixed;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255, 255, .5);
+    background-color: transparent;
+    backdrop-filter:blur(20px); 
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+
+}
+
+.container.active-popup
+{
+  transform: scale(1);
+}
+.head
+{
+    margin-left: 113px;
+    margin-bottom: 19px;
+    color:#162938;
+    font-size: 44px;
+    letter-spacing: 4px;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+
+}
+
+.container form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #162938;
+    color: #e9e6e6;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-left: 56px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    
+  }
+  .box input
+{
+    background: none;
+    border:2px solid  #162938 ;
+    border-radius: 12px;
+    color: black;
+    margin-bottom: 1px;
+    padding: 6px;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size:21px;
+    width: 320px;   
+    
+}
+.box i
+{
+    margin-top: 42px;
+    margin-right: 12px;
+    font-size: 26px;
+    color: #162938;
+}
+.h2
+{
+  color:  #f4f8fc;
+  font-size: 18px;
+  margin-top: 39px;
+  text-align: center;
+  font-weight: bolder;
+  
+}
+#email
+{
+  margin-bottom: 13px;
+  margin-top: 7px;
+  
+}
+.account 
+{
+ box-sizing: border-box;
+  margin-top: 40px;
+}
+#password
+{
+  margin-top: 10px;
+}
+.check
+{
+  margin-left: 35px;
+  margin-top: 19px;
+}
+.h6
+{
+  font-size: 17px;
+  display: inline;
+}
+#sign
+{
+  display: inline;
+  margin-left: 10px;
+  
+  color: #fbfaf9;
+   font-size: 11px; 
+   
+}
+#reset
+{
+  display: inline;
+  font-size: 10px;
+  margin-left: 40;
+  letter-spacing: 1px;
+  background: transparent;
+  color:#162938 ;
+  font-weight: bolder;
+}
+
+  .container input:hover
+  {
+    
+    background: #f3f3f2;
+    color: #060606;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f2f4f4,
+                0 0 25px #eaeded,
+                0 0 50px #f4f7f8,
+                0 0 100px #f2f4f4;
+  }
+  .container a:hover
+  {
+    background: #03e9f4;
+    color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  .container a:hover
+  {
+    background: #03e9f4;
+    color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  
+  .container a span 
+  {
+    position: absolute;
+    display: block;
+  }
+  .container  a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  .container a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  .container  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  .container a span:nth-child(4)
+   {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
